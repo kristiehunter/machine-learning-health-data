@@ -1,0 +1,36 @@
+{
+    "mlp_params": {
+        "activation": ["identity", "logistic", "tanh", "relu"],
+        "solver": ["lbfgs", "sgd", "adam"],
+        "alpha": [0.0001, 0.001, 0.01],
+        "learning_rate": ["constant", "invscaling", "adaptive"],
+        "early_stopping": [true]
+    },
+    "knn_params": {
+        "n_neighbors": [5, 8, 10],
+        "weights": ["uniform", "distance"],
+        "algorithm": ["ball_tree", "kd_tree", "auto"],
+        "p": [1, 2, 4]
+    },
+    "svc_params": {
+        "kernel": ["linear", "poly", "rbf", "sigmoid"],
+        "degree": [2, 3, 4],
+        "gamma": ["scale", "auto"]
+    },
+    "tree_params": {
+        "criterion": ["gini", "entropy"],
+        "splitter": ["best", "random"],
+        "max_depth": [2, 5, 8, 10, 15, 50, 100],
+        "min_samples_split": [2, 3, 5, 8],
+        "min_samples_leaf": [1, 2, 5, 8],
+        "max_features": [1, 2, "auto", "sqrt", "log2"]
+    },
+    "nb_params": {},
+    "lr_params": {
+        "penalty": ["l1", "l2"],
+        "solver": ["liblinear", "saga"]
+    },
+    "lda_params": {
+        "solver": ["svd", "lsqr", "eigen"]
+    }
+}

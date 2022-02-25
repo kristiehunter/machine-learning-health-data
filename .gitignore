@@ -1,1 +1,8 @@
-ml-health-data/
+api/*
+data/*
+logs/*
+src/eda/*
+__pycache__
+config.yaml
+notes.txt
+yarn.lock
